@@ -1,0 +1,45 @@
+/* src/styles/DogCard.css */
+.dog-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.dog-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dog-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.dog-card p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.favorite-button {
+  background-color: #ff7f50;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favorite-button:hover {
+  background-color: #ff5733;
+}
+
+.dog-card:hover {
+  transform: translateY(-10px);
+}

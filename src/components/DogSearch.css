@@ -1,0 +1,180 @@
+/* src/styles/DogSearch.css */
+
+/* Search container styling */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+  }
+  
+  /* Filters section */
+  .filters {
+    display: flex;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 50px;
+  }
+  
+  .filters label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .sortorder {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Dropdown styling */
+  .dropdown-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-header span.arrow {
+    margin-left: 10px;
+  }
+  
+  .dropdown-header span.arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-list {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+  .dropdown-list li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .dropdown-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown-list input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Grid layout for dog cards */
+  .dog-grid {
+    flex: 1;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Styling for individual dog cards */
+  .dog-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .dog-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .dog-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .dog-card p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .dog-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .favorite-button {
+    background-color: #ff7f50;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favorite-button:hover {
+    background-color: #ff5733;
+  }
+  
+  /* Pagination and buttons styling */
+  .pagination {
+    height: 30px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #ff5733;
+  }
+  
+  .favorite-button {
+    background-color: #ff7f50;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favorite-button:hover {
+    background-color: #ff5733;
+  }
+  
